@@ -13,7 +13,7 @@ Release:	0.1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}%{_rc}.tgz
-# Source0-md5:	-
+# Source0-md5:	37032d3e3bb22b66756b686028106a5e
 URL:		http://pear.php.net/package/XML_HTMLSax3
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-common >= 3:4.0.5
@@ -57,7 +57,6 @@ http://www.sitepointforums.com/showthread.php?threadid=121246.
 Thanks also to Marcus Baker (lead developer of SimpleTest:
 http://www.lastcraft.com/simple_test.php) for sorting out the unit
 tests.
-
 
 In PEAR status of this package is: %{_status}.
 
