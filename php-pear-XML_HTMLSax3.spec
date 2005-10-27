@@ -5,7 +5,7 @@
 %define		_pearname	XML_HTMLSax3
 
 Summary:	%{_pearname} - A SAX parser for HTML and other badly formed XML documents
-Summary(pl):	%{_pearname} -
+Summary(pl):	%{_pearname} - parser SAX dla HTML-a i innych ¼le uformowanych dokumentów XML
 Name:		php-pear-%{_pearname}
 Version:	3.0.0
 %define	_rc	RC1
@@ -51,9 +51,9 @@ mechanism to distinguish HTML "quirks" from badly formed HTML (later
 functionality not yet implemented)
 
 A big thanks to Jeff Moore (lead developer of WACT:
-http://wact.sourceforge.net) who's largely responsible for new design,
-as well input from other members at Sitepoint's Advanced PHP forums:
-http://www.sitepointforums.com/showthread.php?threadid=121246.
+http://wact.sourceforge.net/) who's largely responsible for new
+design, as well input from other members at Sitepoint's Advanced PHP
+forums: http://www.sitepointforums.com/showthread.php?threadid=121246.
 
 Thanks also to Marcus Baker (lead developer of SimpleTest:
 http://www.lastcraft.com/simple_test.php) for sorting out the unit
@@ -62,7 +62,45 @@ tests.
 In PEAR status of this package is: %{_status}.
 
 %description -l pl
-...
+XML_HTMLSax3 to oparty na SAX parser XML-a dla ¼le uformowanych
+dokumentów XML, takich jak HTML. Oryginalny kod bazowy zosta³
+stworzony przez Alexandra Zhukova i opublikowany pod
+http://sourceforge.net/projects/phpshelve/. Alexander udzieli³
+pozwolenia na modyfikowanie tego kodu oraz licencji na do³±czenie do
+PEAR-a.
+
+PEAR::XML_HTMLSax3 udostêpnia API bardzo podobne do natywnego
+rozszerzenia PHP XML (http://www.php.net/xml), co pozwala na ³atwe
+dostosowanie procedur obs³uguj±cych u¿ywaj±cych jednego API do
+drugiego. G³ówna ró¿nica polega na tym, ¿e HTMLSax nie za³amie siê na
+¼le uformowanym XML-u, co pozwala na u¿ywanie go do przetwarzania
+dokumentów HTML. Poza tym HTMLSax obs³uguje wszystkie procedury
+obs³ugi dostêpne w Expacie z wyj±tkiem procedur obs³ugi przestrzeni
+nazw i zewnêtrznych encji. Dostêpne s± metody do obs³ugi sekwencji
+specjalnych XML, a tak¿e znaczników otwieraj±cych i zamykaj±cych
+JSP/ASP.
+
+Wersja 1.x wprowadzi³a API podobne do natywnego rozszerzenia SAX, ale
+u¿ywa³a wolnego podej¶cia do przetwarzania (znak po znaku).
+
+Wersja 2.x mia³a wnêtrzno¶ci ca³kowicie przebudowane do u¿ywania
+Lexera, dostarczaj±c wydajno¶æ zbli¿on± do natywnego rozszerzenia XML,
+a tak¿e znacz±co ulepszon±, modularn± architekturê znacznie
+u³atwiaj±c± dodawanie nowej funkcjonalno¶ci.
+
+Z wersj± 3.x zwi±zane jest dostrajanie API i zachowania oraz
+dostêpno¶æ mechanizmu do rozró¿niania sztuczek HTML-owych ze ¼le
+uformowanych dokumentów (dalsza funkcjonalno¶æ nie zosta³a jeszcze
+zaimplementowana).
+
+Du¿e podziêkowania nale¿± siê Jeffowi Moore (g³ównemu programi¶cie
+WACT: http://wact.sourceforge.net/), który jest w znacz±cy sposób
+odpowiedzialny za nowy projekt, a tak¿e kod od innych cz³onków forów
+http://www.sitepointforums.com/showthread.php?threadid=121246.
+
+Podziêkowania nale¿± siê tak¿e Marcusowi Bakerowi (g³ównemu
+programi¶cie SimpleTestu: http://www.lastcraft.com/simple_test.php) za
+uporz±dkowanie testów jednostkowych.
 
 Ta klasa ma w PEAR status: %{_status}.
 
