@@ -7,7 +7,7 @@
 %define	_rc		RC1
 %define	_rel	2
 Summary:	%{_pearname} - A SAX parser for HTML and other badly formed XML documents
-Summary(pl):	%{_pearname} - parser SAX dla HTML-a i innych ¼le uformowanych dokumentów XML
+Summary(pl.UTF-8):   %{_pearname} - parser SAX dla HTML-a i innych Åºle uformowanych dokumentÃ³w XML
 Name:		php-pear-%{_pearname}
 Version:	3.0.0
 Release:	0.%{_rc}.%{_rel}
@@ -64,52 +64,52 @@ tests.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-XML_HTMLSax3 to oparty na SAX parser XML-a dla ¼le uformowanych
-dokumentów XML, takich jak HTML. Oryginalny kod bazowy zosta³
+%description -l pl.UTF-8
+XML_HTMLSax3 to oparty na SAX parser XML-a dla Åºle uformowanych
+dokumentÃ³w XML, takich jak HTML. Oryginalny kod bazowy zostaÅ‚
 stworzony przez Alexandra Zhukova i opublikowany pod
-http://sourceforge.net/projects/phpshelve/. Alexander udzieli³
-pozwolenia na modyfikowanie tego kodu oraz licencji na do³±czenie do
+http://sourceforge.net/projects/phpshelve/. Alexander udzieliÅ‚
+pozwolenia na modyfikowanie tego kodu oraz licencji na doÅ‚Ä…czenie do
 PEAR-a.
 
-PEAR::XML_HTMLSax3 udostêpnia API bardzo podobne do natywnego
-rozszerzenia PHP XML (http://www.php.net/xml), co pozwala na ³atwe
-dostosowanie procedur obs³uguj±cych u¿ywaj±cych jednego API do
-drugiego. G³ówna ró¿nica polega na tym, ¿e HTMLSax nie za³amie siê na
-¼le uformowanym XML-u, co pozwala na u¿ywanie go do przetwarzania
-dokumentów HTML. Poza tym HTMLSax obs³uguje wszystkie procedury
-obs³ugi dostêpne w Expacie z wyj±tkiem procedur obs³ugi przestrzeni
-nazw i zewnêtrznych encji. Dostêpne s± metody do obs³ugi sekwencji
-specjalnych XML, a tak¿e znaczników otwieraj±cych i zamykaj±cych
+PEAR::XML_HTMLSax3 udostÄ™pnia API bardzo podobne do natywnego
+rozszerzenia PHP XML (http://www.php.net/xml), co pozwala na Å‚atwe
+dostosowanie procedur obsÅ‚ugujÄ…cych uÅ¼ywajÄ…cych jednego API do
+drugiego. GÅ‚Ã³wna rÃ³Å¼nica polega na tym, Å¼e HTMLSax nie zaÅ‚amie siÄ™ na
+Åºle uformowanym XML-u, co pozwala na uÅ¼ywanie go do przetwarzania
+dokumentÃ³w HTML. Poza tym HTMLSax obsÅ‚uguje wszystkie procedury
+obsÅ‚ugi dostÄ™pne w Expacie z wyjÄ…tkiem procedur obsÅ‚ugi przestrzeni
+nazw i zewnÄ™trznych encji. DostÄ™pne sÄ… metody do obsÅ‚ugi sekwencji
+specjalnych XML, a takÅ¼e znacznikÃ³w otwierajÄ…cych i zamykajÄ…cych
 JSP/ASP.
 
-Wersja 1.x wprowadzi³a API podobne do natywnego rozszerzenia SAX, ale
-u¿ywa³a wolnego podej¶cia do przetwarzania (znak po znaku).
+Wersja 1.x wprowadziÅ‚a API podobne do natywnego rozszerzenia SAX, ale
+uÅ¼ywaÅ‚a wolnego podejÅ›cia do przetwarzania (znak po znaku).
 
-Wersja 2.x mia³a wnêtrzno¶ci ca³kowicie przebudowane do u¿ywania
-Lexera, dostarczaj±c wydajno¶æ zbli¿on± do natywnego rozszerzenia XML,
-a tak¿e znacz±co ulepszon±, modularn± architekturê znacznie
-u³atwiaj±c± dodawanie nowej funkcjonalno¶ci.
+Wersja 2.x miaÅ‚a wnÄ™trznoÅ›ci caÅ‚kowicie przebudowane do uÅ¼ywania
+Lexera, dostarczajÄ…c wydajnoÅ›Ä‡ zbliÅ¼onÄ… do natywnego rozszerzenia XML,
+a takÅ¼e znaczÄ…co ulepszonÄ…, modularnÄ… architekturÄ™ znacznie
+uÅ‚atwiajÄ…cÄ… dodawanie nowej funkcjonalnoÅ›ci.
 
-Z wersj± 3.x zwi±zane jest dostrajanie API i zachowania oraz
-dostêpno¶æ mechanizmu do rozró¿niania sztuczek HTML-owych ze ¼le
-uformowanych dokumentów (dalsza funkcjonalno¶æ nie zosta³a jeszcze
+Z wersjÄ… 3.x zwiÄ…zane jest dostrajanie API i zachowania oraz
+dostÄ™pnoÅ›Ä‡ mechanizmu do rozrÃ³Å¼niania sztuczek HTML-owych ze Åºle
+uformowanych dokumentÃ³w (dalsza funkcjonalnoÅ›Ä‡ nie zostaÅ‚a jeszcze
 zaimplementowana).
 
-Du¿e podziêkowania nale¿± siê Jeffowi Moore (g³ównemu programi¶cie
-WACT: http://wact.sourceforge.net/), który jest w znacz±cy sposób
-odpowiedzialny za nowy projekt, a tak¿e kod od innych cz³onków forów
+DuÅ¼e podziÄ™kowania naleÅ¼Ä… siÄ™ Jeffowi Moore (gÅ‚Ã³wnemu programiÅ›cie
+WACT: http://wact.sourceforge.net/), ktÃ³ry jest w znaczÄ…cy sposÃ³b
+odpowiedzialny za nowy projekt, a takÅ¼e kod od innych czÅ‚onkÃ³w forÃ³w
 http://www.sitepointforums.com/showthread.php?threadid=121246.
 
-Podziêkowania nale¿± siê tak¿e Marcusowi Bakerowi (g³ównemu
-programi¶cie SimpleTestu: http://www.lastcraft.com/simple_test.php) za
-uporz±dkowanie testów jednostkowych.
+PodziÄ™kowania naleÅ¼Ä… siÄ™ takÅ¼e Marcusowi Bakerowi (gÅ‚Ã³wnemu
+programiÅ›cie SimpleTestu: http://www.lastcraft.com/simple_test.php) za
+uporzÄ…dkowanie testÃ³w jednostkowych.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -118,7 +118,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
