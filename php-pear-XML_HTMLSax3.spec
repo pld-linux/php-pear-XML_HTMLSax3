@@ -7,7 +7,7 @@
 %define	_rc		RC1
 %define	_rel	2
 Summary:	%{_pearname} - A SAX parser for HTML and other badly formed XML documents
-Summary(pl.UTF-8):   %{_pearname} - parser SAX dla HTML-a i innych źle uformowanych dokumentów XML
+Summary(pl.UTF-8):	%{_pearname} - parser SAX dla HTML-a i innych źle uformowanych dokumentów XML
 Name:		php-pear-%{_pearname}
 Version:	3.0.0
 Release:	0.%{_rc}.%{_rel}
@@ -109,7 +109,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
