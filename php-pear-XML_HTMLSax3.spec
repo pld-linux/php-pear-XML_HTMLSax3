@@ -3,13 +3,11 @@
 %define		_subclass	HTMLSax3
 %define		_status		stable
 %define		_pearname	XML_HTMLSax3
-
 Summary:	%{_pearname} - A SAX parser for HTML and other badly formed XML documents
 Summary(pl.UTF-8):	%{_pearname} - parser SAX dla HTML-a i innych źle uformowanych dokumentów XML
 Name:		php-pear-%{_pearname}
 Version:	3.0.0
-Release:	2
-Epoch:		0
+Release:	3
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
@@ -18,9 +16,9 @@ URL:		http://pear.php.net/package/XML_HTMLSax3
 BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 BuildRequires:	rpmbuild(macros) >= 1.300
-Requires:	php(pcre)
 Requires:	php-common >= 3:4.0.5
 Requires:	php-pear
+Suggests:	php-pcre
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -109,9 +107,9 @@ Ta klasa ma w PEAR status: %{_status}.
 Summary:	Tests for PEAR::%{_pearname}
 Summary(pl.UTF-8):	Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
-Requires:	%{name} = %{epoch}:%{version}-%{release}
-AutoReq:	no
+Requires:	%{name} = %{version}-%{release}
 AutoProv:	no
+AutoReq:	no
 
 %description tests
 Tests for PEAR::%{_pearname}.
