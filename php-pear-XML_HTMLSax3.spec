@@ -1,6 +1,5 @@
 %define		_status		stable
 %define		_pearname	XML_HTMLSax3
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - A SAX parser for HTML and other badly formed XML documents
 Summary(pl.UTF-8):	%{_pearname} - parser SAX dla HTML-a i innych źle uformowanych dokumentów XML
 Name:		php-pear-%{_pearname}
